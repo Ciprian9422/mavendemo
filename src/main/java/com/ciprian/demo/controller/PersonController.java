@@ -10,7 +10,7 @@ import java.util.Arrays;
 @Controller
 public class PersonController {
 
-  @GetMapping
+  @GetMapping("people")
   String getPeople(Model model) {
     Person person1 = new Person();
     person1.setAge(18).setName("Ágnes");
