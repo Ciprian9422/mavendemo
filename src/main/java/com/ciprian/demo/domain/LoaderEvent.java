@@ -37,12 +37,8 @@ public class LoaderEvent {
   private LoaderStatusEnum status;
 
   @CreatedDate
-  @Column(name = "created_date", updatable = false)
-  @JsonIgnore
   private Instant createdDate = Instant.now();
 
   @LastModifiedDate
-  @Column(name = "last_modified_date")
-  @JsonIgnore
   private Instant lastModifiedDate = Instant.now();
 }
